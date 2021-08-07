@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Frameworks -->
+    <link rel="stylesheet" href="frameworks/bootstrap.min.css">
+    <!-- Bootstrap icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Manrope:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Favicon Link  -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- My Style  -->
+    <link rel="stylesheet" href="style.css">
+    <title>Honda CBR - Bootstrap Assignment || Emon Ahmed</title>
+</head>
+<body>
+    <!-- Header Section Start  -->
+    <header>
+        <!-- Navbar Section Start  -->
+        <nav class="navbar navbar-expand-md navbar-light py-3 py-md-2">
+            <div class="container">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i></button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav me-auto"></ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link  text-white active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  text-white" href="#shop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  text-white" href="#news">News</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  text-white" href="#faq">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link  text-white" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item ms-md-5">
+                            <a class="nav-link ms-md-5 px-4 btn new-bg-primary text-white" href="#"  data-bs-toggle="modal" data-bs-target="#login">Login</a>
+                        </li>
+                    </ul>
+                </span>
+              </div>
+            </div>
+
+            <!-- Login Modal  -->
+            <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="login">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body text-dark">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputPassword4" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="****">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Login Modal End  -->
+        </nav>
+        <!-- Navbar Section End  -->
+
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <div class="w-50 text-white">
+                    <span class="fw-light font-size-14">Computer-controlled digital transistorized with electronic advance</span>
+                    <h1 class="py-2 font-size-48">Honda CBR 300R</h1>
+                    <p class="fw-light">If you’ve got a soft spot for sportbike design and Grand Prix stylings, then the 2021 Honda CBR300R is your sweet spot between form and function. It’s narrow, light, and a total blast to ride around town and on twisty back roads.</p>
+                      <!-- Button trigger modal -->
+                    <a type="button" class="btn new-bg-primary text-white px-5 py-2" href="#" data-bs-toggle="modal" data-bs-target="#purchase">Purchase</a>
+
+                    <!-- Modal Start-->
+                    <div class="modal fade" id="purchase" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title text-dark" id="exampleModalLabel">Buy Honda CBR 300R</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-dark">
+                            <form class="row g-3">
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Name</label>
+                                <input type="name" class="form-control" id="inputEmail4" placeholder="You Name">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputEmail4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email">
+                              </div>
+                              <div class="col-md-12">
+                                <label for="inputPassword4" class="form-label">Phono Number</label>
+                                <input type="Number" class="form-control" id="inputPassword4" placeholder="+880 1921412932">
+                              </div>
+                              <div class="col-12">
+                                <label for="inputAddress" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St, Apartment, studio, or floor">
+                              </div>
+                              <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Your City">
+                              </div>
+                              <div class="col-md-4">
+                                <label for="inputState" class="form-label">State</label>
+                                <select id="inputState" class="form-select">
+                                  <option selected>Choose...</option>
+                                  <option>Dhaka</option>
+                                  <option>Barisal</option>
+                                  <option>Chittagong</option>
+                                  <option>Khulna</option>
+                                  <option>Mymensingh</option>
+                                  <option>Rajshahi</option>
+                                  <option>Rangpur</option>
+                                  <option>Sylhet</option>
+                                </select>
+                              </div>
+                              <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="1350">
+                              </div>
+                            </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Buy Now</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Modal End  -->
+                </div>
+                <div>
+                    <img class="img-fluid p-5" src="images/header-bike.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End  -->
+
+    <!-- Featured Bike Section Start  -->
+    <section class="container pb-4" id="shop">
+        <div class="text-center my-5">
+            <h1 class="font-size-48 fw-bolder">Fetured Bikes <span class="new-text-primary">2021</span></h1>
+            <p class="text-dark fw-bolder font-size-18">Best bike collection</p>
+        </div>
+        <div class="d-md-flex justify-content-between my-5">
+            <div><img class="img-fluid p-5 cursor-pointer custom-grayscale" src="images/feature-bike.jpg" alt="" src:=""></div>
+            <div><img class="img-fluid p-5 cursor-pointer" src="images/feature-bike.jpg" alt="" src:=""></div>
+            <div><img class="img-fluid p-5 cursor-pointer custom-grayscale" src="images/feature-bike.jpg" alt="" src:=""></div>
+        </div>
+    </section>
+    <!-- Featured Bike Section End  -->
+    
+    <!-- Latest News Section Start  -->
+    <section class="container pb-5" id="news">
+        <div class="text-center my-5">
+            <h1 class="font-size-48 fw-bolder">Latest News</h1>
+        </div>
+        <div class="d-md-flex justify-content-center my-5">
+            <!-- First Artical  -->
+            <article class="card p-3 mx-3 mb-3" style="width: 18rem;">
+                <img src="images/bike-1.png" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h5 class="card-title pt-4 fw-bolder">Ducati XDIAVEL S-73</h5>
+                    <p class="card-text pb-3 fw-normal new-text-secondary">XDiavel, the Ducati cruiser that combines the best of both worlds, is renewed, still remaining true to its philosophy.</p>
+                    <a href="#about" class="btn font-size-18 new-outline">Read More</a>
+                </div>
+            </article>
+
+            <!-- Second Artical  -->
+            <article class="card p-3 mx-3 mb-3" style="width: 18rem;">
+                <img src="images/bike-2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h5 class="card-title pt-4 fw-bolder">Motorcycles & Scooters</h5>
+                    <p class="card-text pb-3 new-text-secondary">Buy Motorcycles & Scooters and get the best deals at the lowest prices on Our Store! Great Savings & Free Delivery on many items.</p>
+                    <a href="#about" class="btn font-size-18 new-outline">Read More</a>
+                </div>
+            </article>
+
+            <!-- Third Artical  -->
+            <article class="card p-3 mx-3 mb-3" style="width: 18rem;">
+                <img src="images/bike-3.png" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                    <h5 class="card-title pt-4 fw-bolder">2021 Honda CBR500R</h5>
+                    <p class="card-text pb-3 new-text-secondary">2021 CBR500R ABS OVERVIEW - Honda Is it any wonder why the Honda CBR500R is one of our most popular sportbikes? It just gets so many things right.</p>
+                    <a href="#about" class="btn font-size-18 new-outline">Read More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Latest News Section End -->
+
+    <!-- Clients Section Start -->
+    <section class="container pb-5" id="client">
+        <div class="text-center my-5">
+            <h1 class="font-size-48 fw-bolder">Happy <span class="new-text-primary">Clients Says</span></h1>
+        </div>
+        <div class="d-md-flex justify-content-center my-5">
+            <div class="card p-3 mx-3 mb-3" style="width: 17rem;">
+                <img src="images/user-1.png" class="card-img-top px-5 rounded-circle mb-3" alt="...">
+                <div class="card-body p-0">
+                    <p class="text-center card-text fw-light new-text-secondary">Thank you so much, I am always happy to help with another challenging project! You're the BEST.
+                    </p>     
+                    <div class="text-center new-text-primary pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <p class="text-center new-link-color font-size-14">Aminul Islam</p>
+                    <p class="text-center">Developer</p>
+                </div>
+            </div>
+            <div class="card p-3 mx-3 mb-3" style="width: 17rem;">
+                <img src="images/user-2.png" class="card-img-top px-5 rounded-circle mb-3" alt="...">
+                <div class="card-body p-0">
+                    <p class="text-center card-text fw-light new-text-secondary">Thank you so much, I am always happy to help with another challenging project! You're the BEST.</p>
+                    <div class="text-center new-text-primary pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <p class="text-center new-link-color font-size-14">Regina Miles</p>
+                    <p class="text-center">Banker</p>
+                </div>
+            </div>
+            <div class="card p-3 mx-3 mb-3" style="width: 17rem;">
+                <img src="images/user-3.png"class="card-img-top px-5 rounded-circle mb-3" alt="...">
+                <div class="card-body p-0">
+                    <p class="card-text fw-light new-text-secondary text-center">Thank you so much, I am always happy to help with another challenging project! You're the BEST.</p>
+                    <div class="text-center new-text-primary pb-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+                    <p class="text-center new-link-color font-size-14">Sadia Afrin</p>
+                    <p class="text-center">Designer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients Section Start -->
+
+    <!-- FAQ Section Start  -->
+    <div class="container pb-5" id="faq">
+        <div class="text-center my-5">
+            <h1 class="font-size-48 fw-bolder pb-4">Frequently Asked <span class="new-text-primary">Questions</span></h1>
+        </div>
+
+        <div class="d-md-flex mb-3">
+            <div class="w-50 mb-5">
+                <img width="400px" class="img-fluid" src="images/faq.png" alt="">
+            </div>
+            <div class="w-50 p-0">
+                <div class="accordion" id="accordionExample">
+                  <!-- First FAQ  -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          What are the most important things I should know about riding a bike?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. 
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Second FAQ  -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          How can I tell if my helmet is old and I need a new one?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. 
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Third FAQ  -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                          My bike has been in storage is it safe to ride?
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. 
+                        </div>
+                      </div>
+                    </div>   
+                    
+                    <!-- Fourth FAQ  -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          What rules should I follow when riding my bike?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ Section End  -->
+
+    <!-- Extra Option Start -->
+    <!-- About Section Start  -->
+    <section class="container pb-4" id="about">
+      <div class="text-center my-5">
+        <h1 class="font-size-48 fw-bolder">About <span class="new-text-primary">Honda CBR</span></h1>
+        <p class="text-dark fw-bolder font-size-18">About Honda Bike</p>
+      </div>
+    <div class="d-md-flex align-items-center">
+      <div><img width="250px" src="images/woman.png" alt=""></div>
+      <div class="p-5 pt-5">
+        <div class="d-md-flex pb-5">
+          <i class="bi bi-bicycle font-size-48 p-3"></i>
+          <div>
+            <h4>Many Types of Bikes</h4>
+            <p class="new-text-secondary font-size-14">We can fit you with the perfect bike because we carry all sizes and types of bikes.</p>
+          </div>
+        </div>
+        <div class="d-md-flex pb-5">
+          <i class="bi bi-star font-size-48 p-3"></i>
+          <div>
+            <h4>Best Bikes in Town</h4>
+            <p class="new-text-secondary font-size-14">Comfort. Safety. Our equipment is guaranteed to make your biking experience 100% stree-free.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5 pt-5">
+        <div class="d-md-flex pb-5">
+          <i class="bi bi-clock font-size-48 p-3"></i>
+          <div>
+            <h4>Longest Opening Hours</h4>
+            <p class="new-text-secondary font-size-14">Have all the time in the world? Rent for an entire day and explore New York City at your leisure.</p>
+          </div>
+        </div>
+        <div class="d-md-flex pb-5">
+          <i class="bi bi-shield-lock font-size-48 p-3"></i>
+          <div>
+            <h4>Rent Fully Insured</h4>
+            <p class="new-text-secondary font-size-14">A simple bodily injury claim from a customer riding your bike can derail your business.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- About Section End  -->
+
+    <!-- Contact Section Start -->
+    <section class="container pb-5" id="contact">
+      <div class="text-center my-5">
+        <h1 class="font-size-48 fw-bolder">Get In <span class="new-text-primary">Touch</span></h1>
+        <p class="text-dark fw-bolder font-size-18 pb-4">Want to get in touch? We'd love to hear from you.</p>
+    </div>
+    <div class="d-md-flex mb-5">
+      <div class="w-50 p-5">
+        <img class="img-fluid" src="images/contact.svg" alt="">
+      </div>
+      <div class="w-50">
+        <div class="mb-2">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+        </div>
+        <div class="mb-2">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-2">
+          <label for="exampleFormControlTextarea1" class="form-label">Massage</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Your Massage"></textarea>
+        </div>
+        <a class="btn new-bg-primary text-white" href="#">Send Email <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    </section>
+    <!-- Contact Section End  -->
+
+    <!-- Extra Option End  -->
+
+    <!-- Footer Section Start  -->
+    <footer>
+      <div class="container d-md-flex justify-content-between align-items-center py-5">
+        <div>
+            <div class="text-white py-2 cursor-pointer">
+              <span>Download Now</span><span>License</span>
+            </div>
+            <div class="text-white py-2 cursor-pointer">
+              <span>About</span>
+              <span>Features</span>
+              <span>Pricing</span>
+              <span>Careers</span>
+              <span>Help</span>
+              <span>Privacy Policy</span>
+            </div>
+            <div class="text-white py-2 font-size-14">
+              <span class="footer-text">&copy; 2021 bike. All rights reserved</span>
+            </div>
+        </div>
+      <div>
+        <img class="cursor-pointer" src="images/download.png" alt="App Store">
+      </div>
+      </div>
+      
+    </footer>
+    <!-- Footer Section End  -->
+
+    <script src="frameworks/bootstrap.min.js"></script>
+</body>
+</html>
